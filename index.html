@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+
+<!-- Start Screen -->
+<div id="startScreen">
+  <h1>Snake Game</h1>
+  <button id="startButton">Start Game</button>
+</div>
+
+<!-- End Screen -->
+<div id="endScreen">
+  <h1>Game Over</h1>
+  <div id="scoreDisplay"></div>
+  <div id="highScoreDisplay"></div>
+  <button id="restartButton">Restart Game</button>
+</div>
+
+<!-- Score Container -->
+<div id="scoreContainer">
+  <div>Score: <span id="currentScore">0</span></div>
+  <div>High Score: <span id="highScore">0</span></div>
+</div>
+
+<!-- Game Canvas -->
+<canvas width="400" height="400" id="game"></canvas>
+
+<div class="arrows-container">
+  <div class="arrows-row">
+    <button id="upArrow">↑</button>
+  </div>
+  <div class="arrows-row">
+    <button id="leftArrow">←</button>
+    <button id="downArrow">↓</button>
+    <button id="rightArrow">→</button>
+  </div>
+</div>
+
+
+<script src="./script.js"></script>
+</body>
+</html>

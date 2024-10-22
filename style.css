@@ -1,0 +1,70 @@
+body {
+    background: url(./snake.jpg);
+    backdrop-filter: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+canvas {
+    border: 1px solid white;
+}
+
+#startScreen, #endScreen {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+#startScreen button, #endScreen button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#scoreContainer {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#endScreen {
+    display: none;
+}
+
+.arrows-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrows-container button {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 24px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.arrows-row {
+    display: flex;
+    justify-content: center;
+}
